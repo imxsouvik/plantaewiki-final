@@ -1,12 +1,12 @@
-Plantae Wiki 🌿
+Plantae Wiki 
 
 Plant Intelligence for a Greener Future
 
-🌍 Overview
+ Overview
 
 Plantae AI is a full-stack, public plant intelligence platform developed for the Microsoft Imagine Cup Hackathon 2026. The platform allows users to identify plants, predict growth trends, detect plant diseases with cures, and explore a Wikipedia-style botanical encyclopedia — all through an intuitive, modern, and nature-aligned interface.
 
-✨ Core Features
+ Core Features
 
 Plant Detection (Home Page)
 Users can upload a plant image and get structured botanical metadata including:
@@ -31,7 +31,7 @@ general plant queries or website guidance, without login, using local browser st
 Dark/Light Mode
 Global theme toggle integrated in the navbar for UI accessibility and flexibility.
 
-🧠 Tech Stack
+ Tech Stack
 Layer	Technology
 Frontend	React + TypeScript + TailwindCSS
 AI Inference	Azure AI Vision Service (deployed via Azure credits)
@@ -40,7 +40,7 @@ Database	Supabase PostgreSQL
 Chat Memory	Browser Local Storage (temporary, no auth)
 Maps Support	Google Maps search for plant native region
 Deployment UI	Hosted via GitHub or Vercel (AI hosted in Azure for proof)
-🏗️ Architecture Highlights
+ Architecture Highlights
 
 Image uploaded from frontend UI
 
@@ -56,7 +56,7 @@ Chatbot answers public queries with lightweight local memory
 
 System is modular, scalable, biologically correct, and hackathon-grade
 
-🚀 Deployment
+ Deployment
 
 Microsoft Azure services deployed using Hackathon credits:
 
@@ -68,13 +68,13 @@ Frontend UI hosted separately (allowed via GitHub/Vercel)
 
 No external API keys used for core AI, keeping the system credit-safe.
 
-👥 Team
+ Team
 
 Project Lead: Souvik Jana
 Project Branding: Plantae Wiki
 Built for: External users globally, public access, hackathon evaluation
 
-🌱 Future Enhancements
+ Future Enhancements
 
 Expand encyclopedia to thousands of plants
 
@@ -86,82 +86,16 @@ Enable multilingual plant summaries
 
 Add voice support for chatbot queries
 
-📬 Contact
+ Contact
 
 For suggestions or queries, use the Contact form page or ask the floating chatbot on the website directly.
 
-🙌 Closing Statement
+ Closing Statement
 
 Plantae AI – Empowering plant knowledge, growth, and health using Microsoft Azure AI for a sustainable and inclusive greener future.
 
-Here is the folder structure for Plantae Wiki 🌿
-
-Plantae-AI/
-│
-├── public/                     # Static assets (logos, icons, placeholder images/videos)
-│   ├── images/
-│   ├── videos/
-│   └── favicon.ico
-│
-├── src/                        # Main source code
-│   ├── components/             # Reusable UI components
-│   │   ├── layout/
-│   │   │   └── PageLayout.tsx  # Shared page wrapper
-│   │   ├── ui/
-│   │   │   ├── Input.tsx
-│   │   │   ├── Button.tsx
-│   │   │   └── Badge.tsx
-│   │   └── chatbot/
-│   │       └── ChatbotWidget.tsx  # Floating chatbot component
-│   │
-│   ├── pages/                  # Website pages
-│   │   ├── Home.tsx            # Plant identification page
-│   │   ├── GrowthPrediction.tsx # Growth forecast page
-│   │   ├── DiseaseDetection.tsx # Plant disease + cure page
-│   │   ├── Encyclopedia.tsx    # Plant encyclopedia (Wikipedia for plants)
-│   │   └── Contact.tsx         # Contact form page
-│   │
-│   ├── hooks/                  # Custom React hooks
-│   │   └── useTheme.ts         # Dark/Light mode handler
-│   │
-│   ├── services/               
-│   │   ├── visionService.ts 
-│   │   └── growthModel.ts    
-│   │
-│   ├── database/               # Supabase DB logic (schema + seed imports handled externally)
-│   │   └── supabaseClient.ts
-│   │
-│   ├── utils/                  # Helper utilities
-│   │   └── displayFormatter.ts
-│   │
-│   ├── App.tsx
-│   ├── main.tsx
-│   └── router.tsx              # Navbar routing structure
-│
-│
-├── backend/                    # (Optional but recommended) External backend logic if expanding later
-│   ├── api/                    # API handlers (Azure + Supabase + ML)
-│   │   ├── plantIdentify.ts
-│   │   ├── growthPredict.ts
-│   │   └── diseaseDetect.ts
-│   │
-│   ├── config/
-│   │   └── envConfig.ts        # API keys stored via .env, not inside Lovable
-│   │
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   └── index.ts                # Backend entry point
-│
-├── data/                       # External plant datasets for future encyclopedia imports
-│   └── plantsSeed.json         # 50–100 initial plants for first DB seed
-│
-├── docs/                       # Hackathon documentation and presentation references
-│   ├── architecture-diagram.png
-│   └── impact-notes.md
-│
-├── .env                        # Environment variables (Gemini & Supabase keys stored here)
-├── package.json
-├── tailwind.config.ts
-├── tsconfig.json
-└── README.md
+ About .env File
+VITE_SUPABASE_PROJECT_ID=""
+VITE_SUPABASE_PUBLISHABLE_KEY=""
+VITE_SUPABASE_URL=""
+VITE_GEMINI_API_KEY=
