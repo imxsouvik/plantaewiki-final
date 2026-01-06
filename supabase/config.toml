@@ -1,0 +1,16 @@
+project_id = "qhoeryndxgaqtmynfwae"
+
+[functions.plant-chat]
+verify_jwt = false
+
+[functions.detect-disease]
+verify_jwt = false
+
+[functions.identify-plant]
+verify_jwt = false
+
+[functions.predict-growth]
+verify_jwt = false
+
+[functions.fetch-plant-image]
+verify_jwt = false
