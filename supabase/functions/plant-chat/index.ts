@@ -13,7 +13,7 @@ serve(async (req) => {
 
   try {
     const { message, history } = await req.json();
-    const geminiApiKey = "AIzaSyBA8yhCvZjPfoyk_ZT4-cSHiNxAorzp_CI";
+    const geminiApiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
     const systemPrompt = `You are PlantWise Assistant, a friendly and knowledgeable plant expert. You help users with:
 - Plant care tips and advice
